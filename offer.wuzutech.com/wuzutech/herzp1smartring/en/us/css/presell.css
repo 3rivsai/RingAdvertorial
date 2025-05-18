@@ -1,0 +1,535 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: 400; /* Normal */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Bold.otf') format('opentype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+body {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 42px;
+    line-height: 52px;
+}
+
+h2 {
+    font-size: 34px;
+    line-height: 45px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 33px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.btn {
+    padding: 14px;
+    border-radius: 4px;
+    border: 1px solid #D9B600;
+    border-bottom: 3px solid #000000;
+    background: #FED606;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #dcbd19;
+}
+
+.semibold-text {
+    font-weight: 600;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.white-color {
+    color: #ffffff;
+}
+
+.blue-color {
+    color: #003DB8;
+}
+
+.green-color {
+    color: #00AF00;
+}
+
+.white-bg {
+    background-color: #ffffff;
+}
+
+.blue-bg {
+    background-color: #0969B5;
+}
+
+.light-yellow-bg {
+    background-color: #FFF0C7;
+}
+
+.dark-bg {
+    background-color: #121212;
+}
+
+.text-highlight {
+    background-image: linear-gradient(0deg, transparent 0, transparent 8px, #FFEE98 8px, #FFEE98 45px, transparent 0);
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-block p {
+    margin-bottom: 32px;
+}
+
+.text-block h4 {
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.image-block {
+    margin: 40px 0;
+    position: relative;
+}
+
+.list-block {
+    margin: 30px 0;
+    max-width: 720px;
+}
+
+.list-block li {
+    margin-bottom: 32px;
+}
+
+.list-block li::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../images/checkmark.png');
+    background-size: 100%;
+    height: 18px;
+    width: 18px;
+    transform: translate(0, 2px);
+    margin-right: 8px;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.container {
+    padding: 0 30px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px rgba(209, 209, 209, 0.4) solid;
+}
+
+.topbar {
+    color: rgba(255, 255, 255, 0.68);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 17px;
+}
+
+.header-title {
+    padding: 8px 0;
+}
+
+.header-title h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 45px;
+    margin-right: 8px;
+}
+
+.notification {
+    margin: 31px 0 36px 0;
+}
+
+.notification-inner {
+    line-height: 28px;
+    padding: 11px;
+}
+
+.content {
+    gap: 72px;
+    margin-top: 18px;
+    margin-bottom: 626px;
+    align-items: flex-start;
+}
+
+.article {
+    flex: 1;
+}
+
+.article-top h1 {
+    margin-bottom: 13px;
+}
+
+.article-top p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.article-author {
+    font-size: 14px;
+    line-height: 28px;
+    margin: 14px 0 26px 0;
+}
+
+.article-author-stars {
+    margin: 0 5px 3px 0;
+}
+
+.article-author-photo {
+    border-radius: 50%;
+    margin: 0 2px;
+}
+
+.what {
+    margin: 40px 0;
+}
+
+.what h2 {
+    max-width: 660px;
+}
+
+.reviews-items {
+    gap: 22px;
+    align-items: flex-start;
+    margin: 20px 0 50px 0;
+}
+
+.reviews-items img {
+    max-width: 314px;
+    flex: 1;
+    min-width: 267px;
+}
+
+.buy p,
+.authentic p {
+    font-size: 20px;
+}
+
+.authentic .text-block a {
+    font-size: 18px;
+}
+
+.thank-you-text {
+    line-height: 32px;
+    max-width: 750px;
+}
+
+.update-block {
+    font-family: "Source Sans Pro", sans-serif;
+    border: 2px dashed #000;
+    background-color: #FFF593;
+    margin-top: 28px;
+}
+
+.update-block-header {
+    background-color: #2E5BFF;
+}
+
+.update-block-header h2 {
+    font-size: 28px;
+    line-height: 48px;
+    padding: 4px 36px;
+    margin-bottom: 0;
+}
+
+.update-block-content {
+    padding: 17px 36px 50px 36px;
+}
+
+.update-block-content p {
+    margin-bottom: 32px;
+}
+
+.update-block-content p span {
+    color: #0077EE;
+}
+
+.update-block-content .btn {
+    border: 1px solid #265D8A;
+    background-color: #2F74AD;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 184.615% */
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.update-block-content .btn:hover {
+    background-color: #3785c6;
+}
+
+.sidebar {
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #D9D9D9;
+    padding: 12px;
+    width: 293px;
+    position: sticky;
+    top: 30px;
+}
+
+.sidebar-inner {
+    background-color: #F5F7F9;
+    padding: 14px 18px;
+}
+
+.sidebar-limit {
+    max-width: 230px;
+    margin: 0 auto;
+}
+
+.sidebar-top h3 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 10px;
+}
+
+.sidebar-rating span {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.sidebar-image {
+    margin: 19px 0 13px 0;
+}
+
+.sidebar-content {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.sidebar-content .btn {
+    font-size: 18px;
+    line-height: 34px;
+    padding: 7px 14px;
+    margin-top: 15px;
+}
+
+footer {
+    color: #505050;
+    padding: 50px 0;
+    color: #505050;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.footer-links a {
+    display: block;
+    padding: 10px 25px;
+    transition: color 0.12s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-content {
+    gap: 21px;
+    margin: 11px 0 30px 0;
+}
+
+.cta-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 7px;
+    width: 100%;
+    transition: opacity 0.11s ease-in, transform 0.125s ease-in-out;
+}
+
+.cta-fixed.hidden {
+    opacity: 0;
+    transform: translate(0, 15%);
+    transition: opacity 0.1s ease-out, transform 0s 0.105s;
+}
+
+@media screen and (min-width: 992px) {
+    .hide-dt {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .hide-mb {
+        display: none;
+    }
+
+    .flex-column-mb {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 33px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .btn {
+        font-size: 21px;
+        line-height: 30px;
+    }
+
+    .image-block {
+        margin: 24px 0;
+    }
+
+    .header-title h3 {
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    .content {
+        margin-bottom: 376px;
+    }
+
+    .article-author {
+        align-items: flex-end;
+        font-size: 14px;
+        line-height: 22px;
+        gap: 3px;
+    }
+
+    .article-author-photo {
+        align-self: center;
+        margin-right: 7px;
+    }
+
+    .article-author-stars {
+        margin-bottom: 0;
+        order: 1;
+    }
+
+    .built h2 {
+        font-size: 34px;
+        line-height: 44px;
+        margin-bottom: 0;
+    }
+
+    .popular h2 {
+        max-width: 640px;
+    }
+
+    .list-block li {
+        display: flex;
+    }
+
+    .list-block li::before {
+        margin-top: 4px;
+    }
+
+    .list-block li span {
+        flex: 1;
+    }
+
+    .reviews-items {
+        justify-content: center;
+    }
+
+    .update-block-header h2 {
+        padding: 4px 16px;
+    }
+
+    .update-block-content {
+        padding: 16px;
+    }
+
+    .update-block-content .btn {
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 30px 0 150px 0;
+    }
+
+    .footer-links a {
+        padding: 0 24px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cta-fixed .btn {
+        padding: 14px 10px;
+        letter-spacing: -0.52px;
+        font-size: clamp(14px, 4.6vw, 20px);
+        line-height: 26px;
+    }
+}
